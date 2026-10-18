@@ -3,49 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Từ vựng tiếng Anh – Minh Trúc tạo</title>
+<title>500 từ vựng tiếng Anh – Minh Trúc tạo</title>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fff7ee;--surface:#fff;--ink:#2a1a10;--muted:#7a5a46;--line:#f3d9c0;--or:#f26a1b;--or-d:#c9500d;--or-soft:#ffe3c9;--ok:#1f8a4c;
+:root{--bg:#fff7ee;--surface:#fff;--ink:#2a1a10;--muted:#7a5a46;--line:#f3d9c0;--or:#f26a1b;--or-d:#c9500d;--or-soft:#ffe3c9;--ok:#1f8a4c;--bad:#d23b2e;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d130c;--surface:#2b1c12;--ink:#fff1e4;--muted:#d1ab90;--line:#4a3120;--or:#ff8440;--or-d:#ffa169;--or-soft:#4a2a15;--ok:#52d28a}}
-:root[data-theme="dark"]{--bg:#1d130c;--surface:#2b1c12;--ink:#fff1e4;--muted:#d1ab90;--line:#4a3120;--or:#ff8440;--or-d:#ffa169;--or-soft:#4a2a15;--ok:#52d28a}
+@media (prefers-color-scheme:dark){:root{--bg:#1d130c;--surface:#2b1c12;--ink:#fff1e4;--muted:#d1ab90;--line:#4a3120;--or:#ff8440;--or-d:#ffa169;--or-soft:#4a2a15;--ok:#52d28a;--bad:#ff7a6e}}
 *{box-sizing:border-box}
 html{scroll-padding-top:150px;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
-button{font:inherit;cursor:pointer}
+button,select,input{font:inherit}button{cursor:pointer}
 :focus-visible{outline:3px solid var(--or);outline-offset:2px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 header.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:14px;padding:12px 0}
 .brand{font-weight:800;font-size:18px;color:var(--or);white-space:nowrap}
 .brand small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
+.nav{display:flex;gap:6px}
+.nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:14px;padding:8px 12px;border-radius:10px}
+.nav a:hover{background:var(--or-soft)}
 .search{flex:1;min-width:0;display:flex;align-items:center;gap:8px;background:var(--surface);border:2px solid var(--line);border-radius:999px;padding:8px 16px}
 .search:focus-within{border-color:var(--or)}
-.search input{flex:1;min-width:0;border:0;background:none;color:var(--ink);font:inherit;outline:none}
+.search input{flex:1;min-width:0;border:0;background:none;color:var(--ink);outline:none}
 .chips{display:flex;gap:8px;overflow-x:auto;padding:0 0 12px;scrollbar-width:thin}
 .chip{flex:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:500}
 .chip[aria-pressed="true"]{background:var(--or);border-color:var(--or);color:#fff}
 .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:48px 0 32px}
-.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.08;margin:0 0 14px;font-weight:800;letter-spacing:-.02em}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.08;margin:0 0 14px;font-weight:800;letter-spacing:-.02em}
 .hero h1 span{color:var(--or)}
 .hero p{margin:0 0 22px;color:var(--muted);font-size:18px;max-width:46ch}
-.cta{display:inline-block;background:var(--or);color:#fff;border:0;border-radius:14px;padding:14px 26px;font-weight:700;text-decoration:none}
-.cta:hover{background:var(--or-d)}
+.cta{display:inline-block;background:var(--or);color:#fff;border:0;border-radius:14px;padding:14px 26px;font-weight:700;text-decoration:none;margin-right:8px}
+.cta.alt{background:var(--or-soft);color:var(--or-d)}
+.cta:hover{filter:brightness(.93)}
 .panel{background:var(--or);color:#fff;border-radius:28px;padding:28px;text-align:center}
 .panel .big{font-size:64px;font-weight:800;line-height:1}
 .panel .bar2{height:12px;border-radius:99px;background:rgba(255,255,255,.3);margin:16px 0 8px;overflow:hidden}
 .panel .bar2 i{display:block;height:100%;width:0;background:#fff;border-radius:99px;transition:width .4s}
+h2.sec{font-size:28px;font-weight:800;margin:40px 0 6px}
+.sub{color:var(--muted);margin:0 0 16px}
 .tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:8px 0 4px}
-.tools .seg{display:flex;border:2px solid var(--line);border-radius:12px;overflow:hidden}
-.tools .seg button{border:0;background:var(--surface);color:var(--ink);padding:8px 14px}
-.tools .seg button[aria-pressed="true"]{background:var(--or);color:#fff}
-.tools span.hint{color:var(--muted);font-size:14px}
-section.topic{padding:28px 0 8px}
-section.topic h2{display:flex;align-items:baseline;gap:10px;margin:0 0 14px;font-size:24px;font-weight:800}
-section.topic h2 em{font-style:normal;font-size:14px;font-weight:500;color:var(--muted)}
+.seg{display:flex;border:2px solid var(--line);border-radius:12px;overflow:hidden}
+.seg button{border:0;background:var(--surface);color:var(--ink);padding:8px 14px}
+.seg button[aria-pressed="true"]{background:var(--or);color:#fff}
+.hint{color:var(--muted);font-size:14px}
+section.topic{padding:24px 0 8px}
+section.topic h3{display:flex;align-items:baseline;gap:10px;margin:0 0 14px;font-size:22px;font-weight:800}
+section.topic h3 em{font-style:normal;font-size:14px;font-weight:500;color:var(--muted)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
-.card{display:flex;align-items:center;gap:12px;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:12px 12px 12px 14px;transition:border-color .15s}
+.card{display:flex;align-items:center;gap:12px;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:12px 12px 12px 14px}
 .card:hover{border-color:var(--or)}
 .card.known{border-color:var(--ok)}
 .say{flex:none;width:46px;height:46px;border-radius:50%;border:0;background:var(--or-soft);color:var(--or);display:grid;place-items:center}
@@ -57,14 +62,44 @@ section.topic h2 em{font-style:normal;font-size:14px;font-weight:500;color:var(-
 .m{color:var(--muted);font-size:14px}
 .hide .m{filter:blur(6px);cursor:pointer;user-select:none}
 .hide .m.show{filter:none}
-.ok{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);background:none;color:transparent;display:grid;place-items:center;font-weight:800}
+.ok{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);background:none;color:transparent;font-weight:800}
 .card.known .ok{background:var(--ok);border-color:var(--ok);color:#fff}
 .empty{padding:48px 0;text-align:center;color:var(--muted)}
+.games{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:14px 0}
+.gbtn{text-align:left;background:var(--surface);border:2px solid var(--line);border-radius:18px;padding:16px;color:var(--ink)}
+.gbtn:hover,.gbtn[aria-pressed="true"]{border-color:var(--or)}
+.gbtn b{display:block;font-size:17px}.gbtn span{color:var(--muted);font-size:14px}
+.gbtn i{font-style:normal;font-size:28px;display:block}
+.scope{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.scope select{max-width:100%;padding:8px 12px;border-radius:10px;border:2px solid var(--line);background:var(--surface);color:var(--ink)}
+.stage{background:var(--surface);border:2px solid var(--line);border-radius:24px;padding:24px;min-height:260px}
+.stage .top2{display:flex;justify-content:space-between;color:var(--muted);font-weight:700;margin-bottom:14px}
+.stage .q{text-align:center;font-size:clamp(28px,5vw,44px);font-weight:800;margin:10px 0 4px}
+.stage .qs{text-align:center;color:var(--muted);margin-bottom:18px}
+.stage .say{width:64px;height:64px;margin:0 auto 10px;display:grid}
+.stage .say svg{width:30px;height:30px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{border:2px solid var(--line);background:var(--bg);color:var(--ink);border-radius:14px;padding:14px;font-weight:500}
+.opt:hover:not(:disabled){border-color:var(--or)}
+.opt.good{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.bad{background:var(--bad);border-color:var(--bad);color:#fff}
+.typ{display:flex;gap:10px;max-width:420px;margin:0 auto}
+.typ input{flex:1;min-width:0;padding:12px 16px;border-radius:12px;border:2px solid var(--line);background:var(--bg);color:var(--ink);font-size:18px}
+.btn{background:var(--or);color:#fff;border:0;border-radius:12px;padding:12px 22px;font-weight:700}
+.btn.alt{background:var(--or-soft);color:var(--or-d)}
+.fb{text-align:center;min-height:28px;margin:14px 0 6px;font-weight:700}
+.fb.good{color:var(--ok)}.fb.bad{color:var(--bad)}
+.next{text-align:center}
+.pairs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.pairs .opt{min-height:64px}
+.pairs .opt.sel{border-color:var(--or);background:var(--or-soft)}
+.pairs .opt.done{visibility:hidden}
+.end{text-align:center;padding:12px 0}
+.end .big{font-size:64px;font-weight:800;color:var(--or)}
 footer{margin-top:48px;background:var(--or);color:#fff;padding:22px 0;text-align:center;font-weight:500}
-footer b{font-weight:800}
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:12px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30}
 .toast.on{opacity:1}
-@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px}.bar{flex-wrap:wrap}.search{order:3;flex-basis:100%}html{scroll-padding-top:190px}}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px}.bar{flex-wrap:wrap}.search{order:3;flex-basis:100%}.opts{grid-template-columns:1fr}html{scroll-padding-top:190px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -73,73 +108,62 @@ footer b{font-weight:800}
   <div class="wrap">
     <div class="bar">
       <div class="brand">Từ vựng tiếng Anh<small>Minh Trúc tạo</small></div>
+      <nav class="nav"><a href="#hoc">Học từ</a><a href="#game">Chơi game</a></nav>
       <label class="search"><span aria-hidden="true">🔍</span><input id="q" type="search" placeholder="Tìm từ tiếng Anh hoặc nghĩa tiếng Việt" aria-label="Tìm từ vựng"></label>
     </div>
     <div class="chips" id="chips" role="group" aria-label="Chủ đề"></div>
   </div>
 </header>
-
 <main class="wrap">
   <div class="hero">
     <div>
-      <h1>Nghe, nhớ và <span>thuộc từ vựng</span> theo chủ đề</h1>
-      <p>Bấm vào biểu tượng loa để nghe phát âm. Đánh dấu từ đã thuộc để theo dõi tiến độ học mỗi ngày.</p>
-      <a class="cta" href="#list">Bắt đầu học</a>
+      <h1>Nghe, nhớ và <span>chơi để thuộc</span> 500 từ vựng</h1>
+      <p>Học theo 11 chủ đề có phát âm, rồi ôn lại bằng 4 trò chơi nhỏ ngay trên trang này.</p>
+      <a class="cta" href="#hoc">Bắt đầu học</a><a class="cta alt" href="#game">Chơi game</a>
     </div>
     <div class="panel" aria-live="polite">
       <div class="big" id="pct">0%</div>
       <div class="bar2"><i id="fill"></i></div>
-      <div id="pcttxt">Đã thuộc 0 / 0 từ</div>
+      <div id="pcttxt"></div>
     </div>
   </div>
 
-  <div class="tools" id="list">
-    <div class="seg" role="group" aria-label="Tốc độ đọc">
-      <button data-rate="0.9" aria-pressed="true">Tốc độ thường</button>
-      <button data-rate="0.55" aria-pressed="false">Đọc chậm</button>
-    </div>
-    <div class="seg" role="group" aria-label="Chế độ học">
-      <button id="modeAll" aria-pressed="true">Xem nghĩa</button>
-      <button id="modeQuiz" aria-pressed="false">Tự kiểm tra</button>
-    </div>
-    <span class="hint" id="hint">Bấm vào từ để nghe lại</span>
+  <h2 class="sec" id="hoc">Học từ theo chủ đề</h2>
+  <div class="tools">
+    <div class="seg" role="group" aria-label="Tốc độ đọc"><button data-rate="0.9" aria-pressed="true">Tốc độ thường</button><button data-rate="0.55" aria-pressed="false">Đọc chậm</button></div>
+    <div class="seg" role="group" aria-label="Chế độ học"><button id="modeAll" aria-pressed="true">Xem nghĩa</button><button id="modeQuiz" aria-pressed="false">Tự kiểm tra</button></div>
+    <span class="hint" id="hint"></span>
   </div>
-
   <div id="out"></div>
   <div class="empty" id="empty" hidden>Không tìm thấy từ phù hợp. Hãy thử từ khóa khác hoặc chọn chủ đề “Tất cả”.</div>
-</main>
 
+  <h2 class="sec" id="game">Chơi game ôn tập</h2>
+  <p class="sub">Chọn phạm vi từ vựng, rồi chọn một trò chơi.</p>
+  <div class="scope"><label for="scope">Phạm vi:</label><select id="scope"></select><span class="hint" id="best"></span></div>
+  <div class="games" id="games"></div>
+  <div class="stage" id="stage" aria-live="polite"><div class="end hint">Chọn một trò chơi ở trên để bắt đầu.</div></div>
+</main>
 <footer><div class="wrap">Minh Trúc tạo · Vocabulary Collection 2026</div></footer>
 <div class="toast" id="toast" role="status"></div>
 
 <script>
-const T=[
-{n:"Từ học thuật tần suất cao",i:"🎓",w:"abandon|v|từ bỏ;acquire|v|đạt được, thu nhận;adequate|adj|đủ, thỏa đáng;analyze|v|phân tích;beneficial|adj|có lợi, mang lại ích lợi;consequence|n|hậu quả, kết quả;crucial|adj|thiết yếu, hết sức quan trọng;diverse|adj|đa dạng;implement|v|thực hiện, triển khai;perspective|n|góc nhìn, quan điểm;sustainable|adj|bền vững;transparent|adj|minh bạch, rõ ràng"},
-{n:"Học tập và thi cử",i:"📚",w:"assessment|n|đánh giá, kiểm tra;bilingual|adj|song ngữ;compulsory|adj|bắt buộc;critical thinking|n phrase|tư duy phản biện;curriculum|n|chương trình học;fluent|adj|lưu loát, thành thạo;lifelong learning|n phrase|học tập suốt đời;plagiarism|n|đạo văn;scholarship|n|học bổng;semester|n|học kỳ;syllabus|n|đề cương môn học;tuition fee|n phrase|tiền học phí"},
-{n:"Công nghệ và truyền thông",i:"💻",w:"algorithm|n|thuật toán;artificial intelligence|n phrase|trí tuệ nhân tạo;automation|n|tự động hóa;breakthrough|n|bước đột phá;cyber security|n phrase|an ninh mạng;data privacy|n phrase|quyền riêng tư dữ liệu;digital divide|n phrase|khoảng cách số;e-commerce|n|thương mại điện tử;innovation|n|đổi mới, sáng tạo;misinformation|n|thông tin sai lệch;social media|n phrase|mạng xã hội;virtual reality|n phrase|thực tế ảo"},
-{n:"Môi trường và khí hậu",i:"🌿",w:"biodiversity|n|đa dạng sinh học;carbon footprint|n phrase|lượng phát thải carbon;climate change|n phrase|biến đổi khí hậu;deforestation|n|nạn phá rừng;drought|n|hạn hán;ecosystem|n|hệ sinh thái;eco-friendly|adj|thân thiện với môi trường;greenhouse effect|n phrase|hiệu ứng nhà kính;renewable energy|n phrase|năng lượng tái tạo;sea level rise|n phrase|nước biển dâng;recycle|v|tái chế;water scarcity|n phrase|khan hiếm nước sạch"},
-{n:"Sức khỏe và tâm lý",i:"💚",w:"anxiety|n|lo âu, lo lắng;balanced diet|n phrase|chế độ ăn cân bằng;burnout|n|kiệt sức tinh thần;chronic disease|n phrase|bệnh mãn tính;depression|n|trầm cảm; chán nản;immune system|n phrase|hệ miễn dịch;mental health|n phrase|sức khỏe tâm thần;mindfulness|n|sự tỉnh thức, chánh niệm;obesity|n|bệnh béo phì;optimistic|adj|lạc quan;sedentary lifestyle|n phrase|lối sống ít vận động;well-being|n|sức khỏe thể chất và tinh thần"},
-{n:"Nghề nghiệp và kinh tế",i:"💼",w:"applicant|n|người xin việc, ứng viên;business plan|n phrase|kế hoạch kinh doanh;career orientation|n phrase|hướng nghiệp;competitive edge|n phrase|lợi thế cạnh tranh;cover letter|n phrase|thư xin việc;entrepreneur|n|doanh nhân khởi nghiệp;inflation|n|lạm phát;internship|n|kỳ thực tập sinh;job interview|n phrase|buổi phỏng vấn xin việc;revenue|n|doanh thu, tiền thu về;soft skills|n phrase|kỹ năng mềm;startup|n|công ty khởi nghiệp sáng tạo"},
-{n:"Xã hội và quyền công dân",i:"⚖️",w:"awareness|n|nhận thức, ý thức;corruption|n|tham nhũng;democracy|n|dân chủ;discrimination|n|sự phân biệt đối xử;domestic violence|n phrase|bạo lực gia đình;gender equality|n phrase|bình đẳng giới;generation gap|n phrase|khoảng cách thế hệ;human rights|n phrase|nhân quyền;inequality|n|bất bình đẳng;infrastructure|n|cơ sở hạ tầng;refugee|n|người tị nạn;stereotype|n|định kiến, khuôn mẫu cố định"},
-{n:"Văn hóa, du lịch và hội nhập",i:"🌏",w:"backpacker|n|người du lịch bụi;cultural diversity|n phrase|đa dạng văn hóa;cultural heritage|n phrase|di sản văn hóa;culture shock|n phrase|sốc văn hóa;ecotourism|n|du lịch sinh thái;ethnic minority|n phrase|dân tộc thiểu số;hospitality|n|lòng hiếu khách;itinerary|n|lịch trình du lịch;jet lag|n|mệt mỏi do lệch múi giờ;landmark|n|công trình/địa danh nổi tiếng;souvenir|n|quà lưu niệm;visa|n|thị thực"},
-{n:"Khoa học, tự nhiên và lịch sử",i:"🔬",w:"artifact|n|di vật, hiện vật (lịch sử);atmosphere|n|khí quyển; bầu không khí;civilization|n|nền văn minh;dynasty|n|triều đại;evolution|n|tiến hóa;genetics|n|di truyền học;gravity|n|lực hút trái đất, trọng lực;hypothesis|n|giả thuyết;laboratory|n|phòng thí nghiệm;natural selection|n phrase|chọn lọc tự nhiên;photosynthesis|n|quang hợp;species|n|loài (sinh vật)"},
-{n:"Đô thị và giao thông",i:"🏙️",w:"affordable housing|n phrase|nhà ở giá phải chăng;commute|v/n|đi làm hằng ngày;congestion|n|tình trạng tắc đường;flyover|n|cầu vượt;gridlock|n|tắc nghẽn giao thông nghiêm trọng;pedestrian|n/adj|người đi bộ;public transport|n phrase|giao thông công cộng;roundabout|n|bùng binh, vòng xuyến;rush hour|n phrase|giờ cao điểm giao thông;skyscraper|n|tòa nhà chọc trời;smart city|n phrase|thành phố thông minh;urbanization|n|đô thị hóa"},
-{n:"Thể thao và phát triển cá nhân",i:"🏅",w:"accountability|n|tinh thần trách nhiệm;adaptability|n|khả năng thích nghi;ambition|n|tham vọng, hoài bão;athlete|n|vận động viên;confidence|n|tự tin;endurance|n|sức bền, khả năng chịu đựng;gratitude|n|lòng biết ơn;mindset|n|tư duy, quan điểm;perseverance|n|kiên trì, bền chí;procrastinate|v|trì hoãn, để việc đến phút chót;resilience|n|khả năng phục hồi, bền bỉ;time management|n phrase|quản lý thời gian"}
-].map((t,k)=>({...t,id:k,words:t.w.split(";").map(s=>{const[a,b,c]=s.split("|");return{w:a,t:b,m:c,key:a}})}));
-
+const DATA=[{"n": "Từ học thuật tần suất cao", "w": [["abandon", "v", "từ bỏ"], ["global", "adj", "toàn cầu"], ["acquire", "v", "đạt được, thu nhận"], ["identify", "v", "xác định, nhận ra"], ["adequate", "adj", "đủ, thỏa đáng"], ["impact", "n/v", "tác động; có tác động"], ["advocate", "v/n", "ủng hộ, vận động; người ủng hộ"], ["implement", "v", "thực hiện, triển khai"], ["alternative", "n/adj", "phương án thay thế; thay thế"], ["inevitable", "adj", "không thể tránh khỏi"], ["analyze", "v", "phân tích"], ["interaction", "n", "tương tác"], ["assume", "v", "giả định, cho rằng"], ["objective", "n/adj", "mục tiêu; khách quan"], ["beneficial", "adj", "có lợi, mang lại ích lợi"], ["perspective", "n", "góc nhìn, quan điểm"], ["challenge", "n/v", "thách thức; phản bác"], ["phenomenon", "n", "hiện tượng"], ["consequence", "n", "hậu quả, kết quả"], ["prevalent", "adj", "phổ biến, lan rộng"], ["contemporary", "adj", "đương đại, hiện đại"], ["priority", "n", "ưu tiên, thứ tự ưu tiên"], ["contribute", "v", "đóng góp"], ["promote", "v", "thúc đẩy, quảng bá, thăng tiến"], ["crucial", "adj", "thiết yếu, hết sức quan trọng"], ["propose", "v", "đề xuất"], ["demonstrate", "v", "chứng minh, thể hiện"], ["reinforce", "v", "củng cố, tăng cường"], ["diverse", "adj", "đa dạng"], ["reliable", "adj", "đáng tin cậy"], ["eﬀicient", "adj", "hiệu quả (dùng ít tài nguyên nhất)"], ["significant", "adj", "đáng kể, quan trọng"], ["empowerment", "n", "trao quyền; nâng cao năng lực"], ["sophisticated", "adj", "tinh vi, phức tạp, hiện đại"], ["ethical", "adj", "có đạo đức, hợp đạo đức"], ["sustainable", "adj", "bền vững"], ["evaluate", "v", "đánh giá, nhận xét"], ["transition", "n/v", "chuyển đổi; giai đoạn chuyển tiếp"], ["fundamental", "adj", "căn bản, cơ bản nhất"], ["transparent", "adj", "minh bạch, rõ ràng"]]}, {"n": "Học tập và thi cử", "w": [["academic", "adj", "thuộc học thuật"], ["intellectual property", "n phrase", "sở hữu trí tuệ"], ["academic transcript", "n phrase", "học bạ, bảng điểm chính thức"], ["interactive learning", "n phrase", "học tập tương tác"], ["accent", "n", "giọng (khi nói ngoại ngữ); trọng âm"], ["lifelong learning", "n phrase", "học tập suốt đời"], ["ambiguous", "adj", "mơ hồ, đa nghĩa"], ["linguistics", "n", "ngôn ngữ học"], ["articulate", "adj/v", "diễn đạt rõ ràng; nói rõ"], ["literacy", "n", "khả năng đọc viết"], ["assessment", "n", "đánh giá, kiểm tra"], ["literacy rate", "n phrase", "tỷ lệ biết chữ"], ["bilingual", "adj", "song ngữ, biết hai ngôn ngữ"], ["major", "n", "ngành học chính ở đại học"], ["bilingual education", "n phrase", "giáo dục song ngữ"], ["mentorship", "n", "hướng dẫn, cố vấn"], ["coeducation", "n", "giáo dục nam nữ học chung trường"], ["motivation", "n", "động lực học tập"], ["coherent", "adj", "mạch lạc, có logic"], ["paraphrase", "v/n", "diễn giải lại; cách diễn giải lại"], ["compulsory", "adj", "bắt buộc"], ["pedagogy", "n", "phương pháp giảng dạy"], ["connotation", "n", "hàm ý, nghĩa bóng"], ["plagiarism", "n", "đạo văn"], ["critical thinking", "n phrase", "tư duy phản biện"], ["rhetoric", "n", "tu từ; lời lẽ khoa trương"], ["curriculum", "n", "chương trình học"], ["rote learning", "n phrase", "học vẹt, học thuộc lòng máy móc"], ["curriculum development", "n phrase", "xây dựng chương trình học"], ["scholarship", "n", "học bổng"], ["dialect", "n", "phương ngữ"], ["semester", "n", "học kỳ"], ["discipline", "n", "kỷ luật; lĩnh vực học thuật"], ["standardized test", "n phrase", "bài kiểm tra chuẩn hóa"], ["distance learning", "n phrase", "học từ xa"], ["syllabus", "n", "đề cương môn học"], ["dropout rate", "n phrase", "tỷ lệ học sinh bỏ học"], ["syntax", "n", "cú pháp, trật tự câu"], ["e-learning", "n", "học trực tuyến"], ["tertiary education", "n phrase", "giáo dục đại học, cao đẳng"], ["educational policy", "n phrase", "chính sách giáo dục"], ["thesis", "n", "luận văn, luận điểm"], ["enroll", "v", "ghi danh, đăng ký học"], ["tuition", "n", "học phí; việc dạy kèm"], ["extracurricular", "adj", "ngoại khóa"], ["tuition assistance", "n phrase", "hỗ trợ học phí"], ["fluent", "adj", "lưu loát, thành thạo (ngôn ngữ)"], ["tuition fee", "n phrase", "tiền học phí"], ["grade", "n/v", "điểm số; chấm điểm"], ["tutorial", "n", "buổi học kèm, hướng dẫn"], ["grading system", "n phrase", "hệ thống chấm điểm"], ["vocational", "adj", "thuộc về nghề nghiệp, dạy nghề"], ["graduate", "v/n", "tốt nghiệp; người tốt nghiệp"], ["vocational school", "n phrase", "trường trung cấp dạy nghề"], ["inclusive education", "n phrase", "giáo dục hòa nhập"]]}, {"n": "Công nghệ và truyền thông", "w": [["algorithm", "n", "thuật toán"], ["editorial", "n/adj", "bài xã luận; thuộc về biên tập"], ["artificial intelligence", "n phrase", "trí tuệ nhân tạo"], ["encryption", "n", "sự mã hóa bảo mật"], ["augmented reality", "n phrase", "thực tế tăng cường (AR)"], ["gadget", "n", "thiết bị công nghệ nhỏ"], ["automation", "n", "tự động hóa"], ["innovation", "n", "đổi mới, sáng tạo"], ["bandwidth", "n", "băng thông"], ["machine learning", "n phrase", "học máy"], ["biotechnology", "n", "công nghệ sinh học"], ["microchip", "n", "vi mạch điện tử"], ["breakthrough", "n", "bước đột phá"], ["misinformation", "n", "thông tin sai lệch"], ["broadcast", "v/n", "phát sóng; chương trình phát sóng"], ["nanotechnology", "n", "công nghệ nano"], ["censorship", "n", "kiểm duyệt"], ["narrative", "n", "câu chuyện, diễn ngôn"], ["censure", "v/n", "chỉ trích mạnh mẽ; lên án"], ["non-verbal", "adj", "phi ngôn ngữ (cử chỉ, nét mặt)"], ["cloud computing", "n phrase", "điện toán đám mây"], ["obsolete", "adj", "lỗi thời, không còn dùng nữa"], ["cloud storage", "n phrase", "lưu trữ đám mây"], ["persuasive", "adj", "có tính thuyết phục"], ["connectivity", "n", "khả năng kết nối"], ["propaganda", "n", "tuyên truyền (có mục đích chính trị)"], ["cryptocurrency", "n", "tiềnđiệntử,tiềnmãhóa"], ["social media", "n phrase", "mạng xã hội"], ["cyber security", "n phrase", "an ninh mạng"], ["software", "n", "phần mềm"], ["cyberbullying", "n", "bắt nạt trên mạng"], ["space exploration", "n phrase", "khám phá vũ trụ"], ["cyberspace", "n", "không gian mạng"], ["tabloid", "n", "báo lá cải"], ["data breach", "n phrase", "sự rò rỉ dữ liệu"], ["tech-savvy", "adj", "sành sỏi công nghệ"], ["data privacy", "n phrase", "quyền riêng tư dữ liệu"], ["telecommunication", "n", "viễn thông"], ["device", "n", "thiết bị"], ["upgrade", "v/n", "nâng cấp"], ["digital divide", "n phrase", "khoảng cách số"], ["virtual assistant", "n phrase", "trợ lý ảo"], ["digital literacy", "n phrase", "khả năng sử dụng công nghệ số"], ["virtual reality", "n phrase", "thực tế ảo"], ["e-commerce", "n", "thương mại điện tử"]]}, {"n": "Môi trường và khí hậu", "w": [["biodegradable", "adj", "phân hủy sinh học được"], ["flood", "n", "lũ lụt"], ["biodiversity", "n", "đa dạng sinh học"], ["fossil fuel", "n phrase", "nhiên liệu hóa thạch (than, dầu)"], ["carbon capture", "n phrase", "thu giữ carbon"], ["glacier", "n", "sông băng"], ["carbon footprint", "n phrase", "lượng phát thải carbon cá nhân/tổ chức"], ["glacier melting", "n phrase", "sự tan chảy của sông băng"], ["carbon neutral", "adj phrase", "trung hòa carbon"], ["green energy", "n phrase", "năng lượng xanh, sạch"], ["carbon tax", "n phrase", "thuế đánh vào phát thải carbon"], ["greenhouse effect", "n phrase", "hiệu ứng nhà kính"], ["climate change", "n phrase", "biến đổi khí hậu"], ["habitat", "n", "môi trường sống (của động vật)"], ["climate mitigation", "n phrase", "giảm thiểu tác động biến đổi khí hậu"], ["habitat destruction", "n phrase", "phá hủy môi trường sống"], ["climatologist", "n", "nhà khí hậu học"], ["landfill", "n", "bãi rác (chôn lấp)"], ["compost", "n/v", "phân compost; ủ phân"], ["net zero", "n phrase", "phát thải ròng bằng 0"], ["conservation", "n", "bảo tồn thiên nhiên"], ["overpopulation", "n", "tình trạng dân số quá đông"], ["contaminate", "v", "làm ô nhiễm, làm bẩn"], ["ozone layer", "n phrase", "tầng ozone"], ["deforestation", "n", "nạn phá rừng"], ["pollution", "n", "ô nhiễm"], ["degrade", "v", "suy thoái, phân hủy"], ["recycle", "v", "tái chế"], ["drought", "n", "hạn hán"], ["reforestation", "n", "tái trồng rừng"], ["eco-friendly", "adj", "thân thiện với môi trường"], ["renewable energy", "n phrase", "năng lượng tái tạo"], ["ecosystem", "n", "hệ sinh thái"], ["sea level rise", "n phrase", "nước biển dâng"], ["emission", "n", "lượng phát thải (khí)"], ["solar panel", "n phrase", "tấm pin năng lượng mặt trời"], ["emission trading", "n phrase", "giao dịch phát thải (thị trường carbon)"], ["sustainable agriculture", "n phrase", "nông nghiệp bền vững"], ["environmental activist", "n phrase", "nhàhoạtđộngmôitrường"], ["toxic waste", "n phrase", "chất thải độc hại"], ["environmental impact", "n phrase", "tác động môi trường"], ["water scarcity", "n phrase", "khan hiếm nước sạch"], ["extinct", "adj", "tuyệt chủng"], ["wind turbine", "n phrase", "tuabin gió"], ["extreme weather", "n phrase", "thời tiết cực đoan (bão, lũ)"]]}, {"n": "Sức khỏe và tâm lý", "w": [["addiction", "n", "chứng nghiện"], ["mindfulness", "n", "sự tỉnh thức, chánh niệm"], ["alternative medicine", "n phrase", "y học thay thế (đông y, châm cứu)"], ["mortality", "n", "tỷ lệ tử vong"], ["anxiety", "n", "lo âu, lo lắng"], ["nutrition", "n", "dinh dưỡng"], ["balanced diet", "n phrase", "chế độ ăn cân bằng"], ["nutritionist", "n", "chuyên gia dinh dưỡng"], ["burnout", "n", "kiệt sức tinh thần"], ["obesity", "n", "bệnh béo phì"], ["carbohydrate", "n", "carbohydrate, tinh bột"], ["optimistic", "adj", "lạc quan"], ["cardiovascular", "adj", "thuộc tim mạch"], ["organic", "adj", "hữu cơ"], ["chronic", "adj", "mãn tính, kéo dài"], ["pandemic", "n", "đại dịch (toàn cầu)"], ["chronic disease", "n phrase", "bệnh mãn tính"], ["pessimistic", "adj", "bi quan"], ["compassion", "n", "lòng trắc ẩn, thương người"], ["phobia", "n", "nỗi sợ bệnh lý"], ["dehydration", "n", "sự mất nước của cơ thể"], ["prescription", "n", "đơn thuốc"], ["depression", "n", "trầm cảm; chán nản"], ["preservative", "n", "chất bảo quản thực phẩm"], ["diagnose", "v", "chẩn đoán (bệnh)"], ["rehabilitation", "n", "phục hồi chức năng"], ["diet", "n", "chế độ ăn uống"], ["sedentary", "adj", "ít vận động, ngồi nhiều"], ["epidemic", "n", "dịch bệnh (trong một khu vực)"], ["sedentary lifestyle", "n phrase", "lối sống ít vận động"], ["frustration", "n", "bực bội, thất vọng"], ["self-esteem", "n", "lòng tự trọng"], ["fulfillment", "n", "cảm giác thỏa mãn, mãn nguyện"], ["staple food", "n phrase", "thực phẩm chủ yếu"], ["grief", "n", "nỗi đau, đau buồn (mất mát)"], ["stress", "n", "căng thẳng"], ["hygiene", "n", "vệ sinh"], ["subconscious", "adj/n", "tiềm thức; thuộc về tiềm thức"], ["immune system", "n phrase", "hệ miễn dịch"], ["symptom", "n", "triệu chứng (bệnh)"], ["immunity", "n", "sự miễn dịch, đề kháng"], ["tolerance", "n", "khoan dung, khả năng chấp nhận"], ["loneliness", "n", "cảm giác cô đơn"], ["trauma", "n", "chấn thương tâm lý"], ["longevity", "n", "tuổi thọ"], ["vaccine", "n", "vắc-xin"], ["malnutrition", "n", "suy dinh dưỡng"], ["vegan", "n/adj", "người thuần chay; thuần chay"], ["mental health", "n phrase", "sức khỏe tâm thần"], ["well-being", "n", "sức khỏe thể chất và tinh thần"]]}, {"n": "Nghề nghiệp và kinh tế", "w": [["applicant", "n", "người xin việc, ứng viên"], ["job vacancy", "n phrase", "vị trí việc làm còn trống"], ["apprentice", "n", "người học việc, thực tập nghề"], ["labor force", "n phrase", "lực lượng lao động"], ["break-even point", "n phrase", "điểm hòa vốn"], ["market research", "n phrase", "nghiên cứu thị trường"], ["business angel", "n phrase", "nhà đầu tư thiên thần"], ["mentor", "n/v", "người cố vấn; cố vấn"], ["business plan", "n phrase", "kế hoạch kinh doanh"], ["networking", "n", "thiết lập mạng lưới quan hệ"], ["career orientation", "n phrase", "hướng nghiệp"], ["niche market", "n phrase", "thị trường ngách"], ["career path", "n phrase", "định hướng nghề nghiệp"], ["outsourcing", "n", "thuê ngoài (dịch vụ)"], ["colleague", "n", "đồng nghiệp"], ["probationary period", "n phrase", "thời gian thử việc"], ["competitive edge", "n phrase", "lợi thế cạnh tranh"], ["profession", "n", "nghề nghiệp, ngành nghề"], ["core competency", "n phrase", "năng lực cốt lõi"], ["promotion", "n", "thăng chức"], ["corporate culture", "n phrase", "văn hóa doanh nghiệp"], ["qualification", "n", "bằng cấp chuyên môn"], ["cover letter", "n phrase", "thư xin việc"], ["recession", "n", "suy thoái kinh tế"], ["crowdfunding", "n", "gọi vốn cộng đồng"], ["resignation letter", "n phrase", "thư xin nghỉ việc chính thức"], ["deadline", "n", "hạn chót"], ["resume", "n", "sơ yếu lý lịch xin việc"], ["deficit", "n", "thâm hụt (ngân sách, thương mại)"], ["revenue", "n", "doanh thu, tiền thu về"], ["emerging market", "n phrase", "thị trường mới nổi"], ["salary", "n", "lương (theo tháng/năm)"], ["employment rate", "n phrase", "tỷ lệ có việc làm"], ["scalability", "n", "khả năng mở rộng quy mô"], ["entrepreneur", "n", "doanh nhân khởi nghiệp"], ["severance package", "n phrase", "gói trợ cấp thôi việc"], ["entrepreneurship", "n", "tinh thần khởi nghiệp"], ["soft skills", "n phrase", "kỹ năng mềm"], ["freelance", "adj/v", "tự do, làm việc tự do"], ["startup", "n", "công ty khởi nghiệp sáng tạo"], ["freelancer", "n", "người làm việc tự do"], ["supply chain", "n phrase", "chuỗi cung ứng"], ["fringe benefits", "n phrase", "phúc lợi phụ thêm"], ["tariff", "n", "thuế quan (đánh vào hàng nhập khẩu)"], ["globalization", "n", "toàn cầu hóa"], ["teamwork", "n", "làm việc nhóm"], ["gross domestic product", "n phrase", "tổng sản phẩm quốc nội (GDP)"], ["underemployment", "n", "tình trạng thiếu việc làm/ làm dưới trình độ"], ["hard skills", "n phrase", "kỹ năng chuyên môn"], ["unemployment", "n", "tình trạng thất nghiệp"], ["inflation", "n", "lạm phát"], ["venture capital", "n phrase", "vốn đầu tư mạo hiểm"], ["initiative", "n", "sáng kiến; tinh thần chủ động"], ["vocational training", "n phrase", "đào tạo nghề"], ["internship", "n", "kỳ thực tập sinh"], ["work ethic", "n phrase", "đạo đức nghề nghiệp; tác phong làm việc"], ["job interview", "n phrase", "buổi phỏng vấn xin việc"], ["workforce development", "n phrase", "phát triển lực lượng lao động"], ["job market", "n phrase", "thị trường việc làm"], ["workload", "n", "khối lượng công việc"]]}, {"n": "Xã hội và quyền công dân", "w": [["asylum", "n", "nơi trú ẩn; quyền tị nạn"], ["marginalized group", "n phrase", "nhóm người yếu thế bên lề xã hội"], ["awareness", "n", "nhận thức, ý thức"], ["migration", "n", "di cư"], ["campaign", "n/v", "chiến dịch (xã hội, chính trị)"], ["multiculturalism", "n", "chủ nghĩa đa văn hóa"], ["civil liberty", "n phrase", "quyền tự do dân sự"], ["nuclear family", "n phrase", "gia đình hạt nhân (bố, mẹ, con)"], ["constitution", "n", "hiến pháp"], ["oppression", "n", "đàn áp, áp bức"], ["corruption", "n", "tham nhũng"], ["poverty reduction", "n phrase", "sự xóa đói giảm nghèo"], ["delinquent", "n/adj", "kẻ phạm pháp vị thành niên; phạm pháp"], ["prejudice", "n", "thành kiến, định kiến"], ["democracy", "n", "dân chủ"], ["racism", "n", "phân biệt chủng tộc"], ["diplomat", "n", "nhà ngoại giao"], ["referendum", "n", "trưng cầu dân ý"], ["discrimination", "n", "sự phân biệt đối xử"], ["refugee", "n", "người tị nạn"], ["divorce", "n/v", "ly hôn; vụ ly hôn"], ["rehabilitation program", "n phrase", "chương trình phục hồi, tái hòa nhập"], ["domestic violence", "n phrase", "bạo lực gia đình"], ["sanction", "n/v", "lệnh trừng phạt; trừng phạt"], ["election", "n", "cuộc bầu cử"], ["sibling", "n", "anh/chị/em ruột"], ["extended family", "n phrase", "đại gia đình, gia đình nhiều thế hệ"], ["social cohesion", "n phrase", "gắn kết xã hội"], ["gender equality", "n phrase", "bình đẳng giới"], ["social exclusion", "n phrase", "loại trừ xã hội"], ["generation gap", "n phrase", "khoảng cách thế hệ"], ["social mobility", "n phrase", "cơ hội vươn lên trong xã hội"], ["homelessness", "n", "tình trạng vô gia cư"], ["solidarity", "n", "tinh thần đoàn kết"], ["human rights", "n phrase", "nhân quyền"], ["sovereignty", "n", "chủ quyền quốc gia"], ["human traﬀicking", "n phrase", "nạn buôn bán người trái phép"], ["stereotype", "n", "định kiến, khuôn mẫu cố định"], ["inequality", "n", "bất bình đẳng"], ["traﬀicking", "n", "buôn bán người hoặc chất cấm"], ["infrastructure", "n", "cơ sở hạ tầng"], ["treaty", "n", "hiệp ước"], ["juvenile", "adj/n", "vị thành niên; thuộc về trẻ em"], ["upbringing", "n", "cách nuôi dưỡng, giáo dục từ nhỏ"], ["juvenile delinquency", "n phrase", "tội phạm thanh thiếu niên"], ["urban poverty", "n phrase", "nghèo đói ở thành thị"], ["legislation", "n", "luật pháp, pháp luật"], ["vulnerable", "adj", "dễbịtổnthương,yếuthế"], ["marginalized", "adj", "yếu thế, bị loại trừ"], ["vulnerable population", "n phrase", "nhóm dân cư dễ bị tổn thương"]]}, {"n": "Văn hóa, du lịch và hội nhập", "w": [["acculturation", "n", "sự tiếp nhận và biến đổi văn hóa"], ["hospitality", "n", "lòng hiếu khách"], ["aesthetic", "adj/n", "thẩm mỹ; cảm quan thẩm mỹ"], ["host country", "n phrase", "nước sở tại đón nhận di dân"], ["assimilation", "n", "sự đồng hóa văn hóa"], ["indigenous", "adj", "bản địa, thuộc về dân tộc gốc"], ["backpacker", "n", "người du lịch bụi"], ["indigenous culture", "n phrase", "văn hóa bản địa gốc"], ["bilingualism", "n", "khả năng dùng song ngữ song hành"], ["integration", "n", "sự hội nhập quốc tế"], ["cosmopolitan", "adj", "mang tính quốc tế, đa văn hóa"], ["intercultural", "adj", "liên văn hóa (giao lưu giữa các bên)"], ["cross-cultural", "adj", "giao lưu văn hóa, so sánh văn hóa"], ["international cooperation", "n phrase", "hợp tác quốc tế"], ["cultural appropriation", "n phrase", "chiếm dụng văn hóa"], ["itinerary", "n", "lịch trình du lịch"], ["cultural diplomacy", "n phrase", "ngoại giao văn hóa"], ["jet lag", "n", "chứng mệt mỏi do lệch múi giờ"], ["cultural diversity", "n phrase", "đa dạng văn hóa"], ["landmark", "n", "công trình/địa danh nổi tiếng"], ["cultural heritage", "n phrase", "di sản văn hóa"], ["literature", "n", "văn học"], ["culture shock", "n phrase", "sốc văn hóa"], ["local cuisine", "n phrase", "ẩm thực địa phương"], ["curator", "n", "người phụ trách bảo tàng/triển lãm"], ["masterpiece", "n", "kiệt tác"], ["customs", "n", "phong tục tập quán lâu đời"], ["migrant worker", "n phrase", "lao động nhập cư"], ["diplomacy", "n", "ngoại giao"], ["national identity", "n phrase", "bản sắc dân tộc"], ["ecotourism", "n", "du lịch sinh thái"], ["pluralistic society", "n phrase", "xã hội đa nguyên đa dạng"], ["ethnic minority", "n phrase", "dân tộc thiểu số"], ["preservation", "n", "sự bảo tồn di sản vật thể/phi vật thể"], ["expatriate", "n", "người sống và làm việc ở nước ngoài"], ["ritual", "n", "nghi lễ, nghi thức"], ["expedition", "n", "cuộc thám hiểm"], ["sculpture", "n", "tác phẩm điêu khắc"], ["folklore", "n", "văn hóa dân gian, truyện dân gian"], ["souvenir", "n", "quà lưu niệm"], ["global citizen", "n phrase", "công dân toàn cầu"], ["tourist attraction", "n phrase", "điểm du lịch hấp dẫn"], ["global integration", "n phrase", "hội nhập toàn cầu"], ["traditions", "n", "truyền thống"], ["heritage", "n", "di sản (văn hóa, lịch sử)"], ["visa", "n", "thị thực"], ["heritage preservation", "n phrase", "bảo tồn di sản"], ["visa exemption", "n phrase", "miễn thị thực nhập cảnh"], ["heritage site", "n phrase", "địa điểm di sản"], ["xenophobia", "n", "tâm lý bài ngoại"]]}, {"n": "Khoa học, tự nhiên và lịch sử", "w": [["artifact", "n", "di vật, hiện vật (lịch sử)"], ["magnetic", "adj", "thuộc về từ trường, có từ tính"], ["asteroid", "n", "tiểu hành tinh"], ["microorganism", "n", "vi sinh vật"], ["atmosphere", "n", "khí quyển; bầu không khí"], ["molecule", "n", "phân tử"], ["carbon dioxide", "n phrase", "khí carbon dioxide (CO￿)"], ["monument", "n", "đài tưởng niệm, công trình lịch sử"], ["civilization", "n", "nền văn minh"], ["natural selection", "n phrase", "chọn lọc tự nhiên"], ["colonialism", "n", "chủ nghĩa thực dân"], ["organic chemistry", "n phrase", "hóa học hữu cơ"], ["conquest", "n", "cuộc chinh phạt, xâm chiếm"], ["organism", "n", "sinh vật, cơ thể sống"], ["DNA", "n", "ADN (axit deoxyribonucleic)"], ["pathogen", "n", "mầm bệnh, tác nhân gây bệnh"], ["DNA replication", "n phrase", "sự nhân đôi ADN"], ["peninsula", "n", "bán đảo"], ["dynasty", "n", "triều đại"], ["photosynthesis", "n", "quang hợp"], ["ecology", "n", "sinh thái học"], ["plateau", "n", "cao nguyên"], ["electromagnetic", "adj", "thuộc điện từ"], ["radiation", "n", "bức xạ, phóng xạ"], ["evolution", "n", "tiến hóa"], ["renewable", "adj", "tái tạo được"], ["genetics", "n", "di truyền học"], ["species", "n", "loài (sinh vật)"], ["gravity", "n", "lực hút trái đất, trọng lực"], ["territory", "n", "lãnh thổ, vùng đất"], ["hypothesis", "n", "giả thuyết"], ["topography", "n", "địa hình"], ["laboratory", "n", "phòng thí nghiệm"], ["wavelength", "n", "bước sóng"], ["laboratory technician", "n phrase", "kỹ thuật viên phòng thí nghiệm"]]}, {"n": "Đô thị và giao thông", "w": [["affordable housing", "n phrase", "nhà ở giá phải chăng"], ["pedestrian zone", "n phrase", "phố đi bộ"], ["commute", "v/n", "đi làm hằng ngày; quãng đường đi làm"], ["public transport", "n phrase", "giao thông công cộng"], ["commuter", "n", "người đi làm bằng xe cộ hằng ngày"], ["renovation", "n", "tu sửa, cải tạo"], ["congestion", "n", "tình trạng tắc đường"], ["roadway", "n", "lòng đường xe chạy"], ["flyover", "n", "cầu vượt"], ["roundabout", "n", "bùng binh, vòng xuyến"], ["gridlock", "n", "tắc nghẽn giao thông nghiêm trọng"], ["rush hour", "n phrase", "giờ cao điểm giao thông"], ["highway", "n", "đường cao tốc"], ["skyscraper", "n", "tòa nhà chọc trời"], ["lane", "n", "làn đường"], ["smart city", "n phrase", "thành phố thông minh"], ["metropolitan", "adj", "thuộc về thành phố lớn, đô thị"], ["suburb", "n", "vùng ngoại ô"], ["municipality", "n", "đô thị tự quản"], ["subway", "n", "tàu điện ngầm"], ["overpass", "n", "cầu vượt"], ["urbanization", "n", "đô thị hóa"], ["pavement", "n", "vỉa hè"], ["zoning", "n", "phân vùng quy hoạch đô thị"], ["pedestrian", "n/adj", "người đi bộ; dành cho người đi bộ"]]}, {"n": "Thể thao và phát triển cá nhân", "w": [["accountability", "n", "tinh thần trách nhiệm"], ["mindset", "n", "tư duy, quan điểm"], ["adaptability", "n", "khả năng thích nghi"], ["obstacle", "n", "trở ngại, vật cản"], ["aerobics", "n", "thể dục nhịp điệu"], ["opponent", "n", "đối thủ thi đấu"], ["amateur", "n/adj", "người chơi nghiệp dư; không chuyên"], ["overcome", "v", "vượt qua (khó khăn)"], ["ambition", "n", "tham vọng, hoài bão"], ["pastime", "n", "trò giải trí, sở thích"], ["aspire", "v", "khao khát, hoài bão"], ["performance", "n", "sự thể hiện, phong độ"], ["athlete", "n", "vận động viên"], ["perseverance", "n", "kiên trì, bền chí"], ["championship", "n", "giải vô địch"], ["procrastinate", "v", "trì hoãn, để việc đến phút chót"], ["coaching staff", "n phrase", "ban huấn luyện"], ["recreation", "n", "hoạt động giải trí"], ["competitive", "adj", "có tính cạnh tranh, muốn thắng"], ["referee", "n", "trọng tài (bóng đá, bóng rổ...)"], ["confidence", "n", "tự tin"], ["resilience", "n", "khả năng phục hồi, bền bỉ"], ["consistency", "n", "tính nhất quán"], ["rivalry", "n", "ganh đua, cạnh tranh"], ["doping", "n", "dùng chất cấm trong thể thao"], ["self-discipline", "n", "tính tự kỷ luật"], ["empathy", "n", "đồng cảm, thấu hiểu cảm xúc"], ["self-reflection", "n", "sự tự suy ngẫm bản thân"], ["endurance", "n", "sức bền, khả năng chịu đựng"], ["spectator", "n", "khán giả (xem thể thao trực tiếp)"], ["fitness", "n", "sức khỏe thể chất, thể lực"], ["sportsmanship", "n", "tinh thần thể thao"], ["gratitude", "n", "lòng biết ơn"], ["stamina", "n", "sức bền, sức chịu đựng"], ["gymnasium", "n", "phòng tập thể dục"], ["time management", "n phrase", "quản lý thời gian"], ["gymnastics", "n", "thể dục dụng cụ"], ["tournament", "n", "giải đấu"], ["habit", "n", "thói quen"], ["trophy", "n", "cúp, giải thưởng"], ["integrity", "n", "tính chính trực, liêm chính"], ["umpire", "n", "trọng tài (tennis, bóng chày)"], ["interpersonal skills", "n phrase", "kỹ năng tương tác cá nhân"], ["workout", "n", "buổi tập thể dục"], ["leisure", "n", "thời gian rảnh rỗi, giải trí"]]}];
+const ICONS=["🎓","📚","💻","🌿","💚","💼","⚖️","🌏","🔬","🏙️","🏅"];
+const T=DATA.map((t,k)=>({id:k,n:t.n,i:ICONS[k],words:t.w.map(([w,t2,m])=>({w,t:t2,m,key:w+"|"+m}))}));
 const $=s=>document.querySelector(s);
-const out=$("#out"),chips=$("#chips"),toast=$("#toast");
-let known=new Set(),topic=-1,query="",rate=0.9,quiz=false,voice=null,tt;
-try{known=new Set(JSON.parse(localStorage.getItem("mt-known")||"[]"))}catch(e){}
-const save=()=>{try{localStorage.setItem("mt-known",JSON.stringify([...known]))}catch(e){}};
+const out=$("#out"),chips=$("#chips"),toast=$("#toast"),stage=$("#stage");
+let known=new Set(),topic=-1,query="",rate=0.9,quiz=false,voice=null,tt,best={};
+try{known=new Set(JSON.parse(localStorage.getItem("mt-known")||"[]"));best=JSON.parse(localStorage.getItem("mt-best")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("mt-known",JSON.stringify([...known]));localStorage.setItem("mt-best",JSON.stringify(best))}catch(e){}};
 const total=T.reduce((n,t)=>n+t.words.length,0);
-const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const shuf=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
 const ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
-
+const note=m=>{toast.textContent=m;toast.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove("on"),2800)};
 function say(text,btn){
   if(!("speechSynthesis" in window)){note("Trình duyệt này chưa hỗ trợ đọc âm thanh. Hãy thử Chrome, Edge hoặc Safari.");return}
   const s=speechSynthesis;s.cancel();
-  const u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=rate;
+  const u=new SpeechSynthesisUtterance(text.replace(/\s*\(.*?\)/g,""));u.lang="en-US";u.rate=rate;
   if(!voice){const v=s.getVoices();voice=v.find(x=>/en[-_]US/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang))||null}
   if(voice)u.voice=voice;
   document.querySelectorAll(".say.on").forEach(b=>b.classList.remove("on"));
@@ -147,8 +171,8 @@ function say(text,btn){
   s.speak(u);
 }
 if("speechSynthesis" in window)speechSynthesis.onvoiceschanged=()=>{voice=null};
-function note(m){toast.textContent=m;toast.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove("on"),2800)}
 
+/* ---- Học từ ---- */
 function buildChips(){
   const all=[{id:-1,n:"Tất cả"},...T.map(t=>({id:t.id,n:t.i+" "+t.n}))];
   chips.innerHTML=all.map(c=>`<button class="chip" data-id="${c.id}" aria-pressed="${c.id===topic}">${esc(c.n)}</button>`).join("");
@@ -159,8 +183,8 @@ function render(){
     if(topic!==-1&&t.id!==topic)return;
     const ws=t.words.filter(x=>!q||x.w.toLowerCase().includes(q)||x.m.toLowerCase().includes(q));
     if(!ws.length)return;shown+=ws.length;
-    html+=`<section class="topic"><h2>${t.i} ${esc(t.n)} <em>${ws.length} từ</em></h2><div class="grid ${quiz?"hide":""}">`+
-    ws.map(x=>`<div class="card ${known.has(x.key)?"known":""}" data-k="${esc(x.key)}">
+    html+=`<section class="topic"><h3>${t.i} ${esc(t.n)} <em>${ws.length} từ</em></h3><div class="grid ${quiz?"hide":""}">`+
+    ws.map(x=>`<div class="card ${known.has(x.key)?"known":""}" data-k="${esc(x.key)}" data-w="${esc(x.w)}">
       <button class="say" aria-label="Nghe phát âm từ ${esc(x.w)}">${ICON}</button>
       <div class="txt"><div class="w">${esc(x.w)}<span class="t">${esc(x.t)}</span></div><div class="m" tabindex="0">${esc(x.m)}</div></div>
       <button class="ok" aria-label="Đánh dấu đã thuộc" aria-pressed="${known.has(x.key)}">✓</button></div>`).join("")+`</div></section>`;
@@ -168,26 +192,103 @@ function render(){
   out.innerHTML=html;$("#empty").hidden=shown>0;progress();
 }
 function progress(){
-  const n=[...known].filter(k=>T.some(t=>t.words.some(w=>w.key===k))).length,p=Math.round(n/total*100);
+  const n=T.reduce((c,t)=>c+t.words.filter(w=>known.has(w.key)).length,0),p=Math.round(n/total*100);
   $("#pct").textContent=p+"%";$("#fill").style.width=p+"%";$("#pcttxt").textContent=`Đã thuộc ${n} / ${total} từ`;
 }
 chips.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;topic=+b.dataset.id;buildChips();render()});
 $("#q").addEventListener("input",e=>{query=e.target.value;render()});
 out.addEventListener("click",e=>{
   const card=e.target.closest(".card");if(!card)return;const k=card.dataset.k;
-  if(e.target.closest(".ok")){
-    known.has(k)?known.delete(k):known.add(k);save();
-    card.classList.toggle("known",known.has(k));e.target.closest(".ok").setAttribute("aria-pressed",known.has(k));progress();return}
+  const okb=e.target.closest(".ok");
+  if(okb){known.has(k)?known.delete(k):known.add(k);save();card.classList.toggle("known",known.has(k));okb.setAttribute("aria-pressed",known.has(k));progress();return}
   if(e.target.closest(".m")&&quiz){e.target.closest(".m").classList.toggle("show");return}
-  say(k,card.querySelector(".say"));
+  say(card.dataset.w,card.querySelector(".say"));
 });
 out.addEventListener("keydown",e=>{if(quiz&&e.key==="Enter"&&e.target.classList.contains("m"))e.target.classList.toggle("show")});
-document.querySelectorAll("[data-rate]").forEach(b=>b.addEventListener("click",()=>{
-  rate=+b.dataset.rate;document.querySelectorAll("[data-rate]").forEach(x=>x.setAttribute("aria-pressed",x===b))}));
-function mode(q){quiz=q;$("#modeAll").setAttribute("aria-pressed",!q);$("#modeQuiz").setAttribute("aria-pressed",q);
-  $("#hint").textContent=q?"Bấm vào phần mờ để xem nghĩa":"Bấm vào từ để nghe lại";render()}
+document.querySelectorAll("[data-rate]").forEach(b=>b.addEventListener("click",()=>{rate=+b.dataset.rate;document.querySelectorAll("[data-rate]").forEach(x=>x.setAttribute("aria-pressed",x===b))}));
+function mode(q){quiz=q;$("#modeAll").setAttribute("aria-pressed",!q);$("#modeQuiz").setAttribute("aria-pressed",q);$("#hint").textContent=q?"Bấm vào phần mờ để xem nghĩa":"Bấm vào từ để nghe lại";render()}
 $("#modeAll").onclick=()=>mode(false);$("#modeQuiz").onclick=()=>mode(true);
-buildChips();render();
+
+/* ---- Game ---- */
+const G=[
+ {id:"mean",i:"🎯",n:"Chọn nghĩa đúng",d:"Thấy từ tiếng Anh, chọn nghĩa tiếng Việt"},
+ {id:"listen",i:"🎧",n:"Nghe và chọn từ",d:"Nghe phát âm, chọn đúng từ tiếng Anh"},
+ {id:"type",i:"⌨️",n:"Nghe và gõ từ",d:"Đọc nghĩa, nghe phát âm, gõ đúng chính tả"},
+ {id:"pair",i:"🧩",n:"Ghép cặp",d:"Nối từ tiếng Anh với nghĩa của nó"}];
+$("#scope").innerHTML=`<option value="-1">Tất cả ${total} từ</option>`+T.map(t=>`<option value="${t.id}">${t.i} ${esc(t.n)} (${t.words.length} từ)</option>`).join("");
+$("#games").innerHTML=G.map(g=>`<button class="gbtn" data-g="${g.id}" aria-pressed="false"><i>${g.i}</i><b>${g.n}</b><span>${g.d}</span></button>`).join("");
+const pool=()=>{const s=+$("#scope").value;return T.filter(t=>s===-1||t.id===s).flatMap(t=>t.words)};
+let S=null;
+function showBest(id){const b=best[id+"|"+$("#scope").value];$("#best").textContent=b!=null?`Điểm cao nhất: ${b}`:""}
+$("#scope").onchange=()=>{S=null;stage.innerHTML='<div class="end hint">Chọn một trò chơi ở trên để bắt đầu.</div>'};
+$("#games").addEventListener("click",e=>{const b=e.target.closest(".gbtn");if(!b)return;
+  document.querySelectorAll(".gbtn").forEach(x=>x.setAttribute("aria-pressed",x===b));start(b.dataset.g);stage.scrollIntoView({behavior:"smooth",block:"nearest"})});
+function start(id){
+  const p=pool();
+  if(id==="pair"){const ws=shuf(p).slice(0,6);
+    const cells=shuf(ws.flatMap((x,i)=>[{i,t:x.w,en:1},{i,t:x.m}]));
+    S={id,cells,sel:null,left:ws.length,moves:0,t0:Date.now()};return drawPair()}
+  const qs=shuf(p).slice(0,10).map(x=>({x,o:shuf([x,...shuf(p.filter(y=>y!==x&&y.m!==x.m&&y.w!==x.w)).slice(0,3)])}));
+  S={id,qs,n:0,score:0,done:false};drawQ();
+}
+function drawQ(){
+  const{id,qs,n,score}=S;if(n>=qs.length)return finish(score,qs.length);
+  const q=qs[n],x=q.x;S.done=false;
+  let h=`<div class="top2"><span>Câu ${n+1}/${qs.length}</span><span>Điểm: ${score}</span></div>`;
+  if(id==="mean")h+=`<button class="say" aria-label="Nghe">${ICON}</button><div class="q">${esc(x.w)}</div><div class="qs">${esc(x.t)} · chọn nghĩa đúng</div>`;
+  if(id==="listen")h+=`<button class="say" aria-label="Nghe lại">${ICON}</button><div class="qs">Bấm loa để nghe lại, rồi chọn từ bạn nghe được</div>`;
+  if(id==="type")h+=`<button class="say" aria-label="Nghe lại">${ICON}</button><div class="q">${esc(x.m)}</div><div class="qs">Nghe và gõ từ tiếng Anh (${esc(x.t)}${x.w.includes(" ")?", "+x.w.split(" ").length+" từ":""})</div>`;
+  if(id==="type")h+=`<form class="typ" id="tf"><input id="ti" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Gõ từ tiếng Anh"><button class="btn">Kiểm tra</button></form>`;
+  else h+=`<div class="opts">`+q.o.map((o,i)=>`<button class="opt" data-i="${i}">${esc(id==="mean"?o.m:o.w)}</button>`).join("")+`</div>`;
+  h+=`<div class="fb" id="fb"></div><div class="next" id="nx"></div>`;
+  stage.innerHTML=h;
+  if(id!=="mean")setTimeout(()=>say(x.w,stage.querySelector(".say")),250);
+  if(id==="type")$("#ti").focus();
+}
+function result(ok,x){
+  S.done=true;if(ok)S.score++;
+  const f=$("#fb");f.className="fb "+(ok?"good":"bad");
+  f.textContent=ok?"Chính xác!":`Chưa đúng. Đáp án: ${x.w} – ${x.m}`;
+  $("#nx").innerHTML=`<button class="btn" id="nb">${S.n+1>=S.qs.length?"Xem kết quả":"Câu tiếp theo"}</button>`;
+  $("#nb").onclick=()=>{S.n++;drawQ()};$("#nb").focus();
+}
+stage.addEventListener("click",e=>{
+  const sp=e.target.closest(".say");
+  if(sp&&S&&S.qs){say(S.qs[S.n].x.w,sp);return}
+  const o=e.target.closest(".opt");if(!o||!S)return;
+  if(S.id==="pair")return pickPair(+o.dataset.c);
+  if(S.done)return;
+  const q=S.qs[S.n],c=q.o[+o.dataset.i];
+  stage.querySelectorAll(".opt").forEach((b,i)=>{b.disabled=true;if(q.o[i]===q.x)b.classList.add("good")});
+  if(c!==q.x)o.classList.add("bad");
+  result(c===q.x,q.x);
+});
+stage.addEventListener("submit",e=>{e.preventDefault();if(S.done)return;
+  const x=S.qs[S.n].x,v=$("#ti").value.trim().toLowerCase().replace(/\s+/g," ");
+  const ans=x.w.toLowerCase().replace(/\s*\(.*?\)/g,"");$("#ti").disabled=true;result(v===ans,x)});
+function finish(s,n){
+  const key=S.id+"|"+$("#scope").value;if(best[key]==null||s>best[key]){best[key]=s;save()}
+  const msg=s===n?"Tuyệt vời, đúng hết!":s>=n*.7?"Làm tốt lắm!":"Cố gắng thêm nhé, chơi lại để nhớ lâu hơn.";
+  stage.innerHTML=`<div class="end"><div class="big">${s}/${n}</div><p>${msg}</p><button class="btn" id="again">Chơi lại</button></div>`;
+  $("#again").onclick=()=>start(S.id);showBest(S.id);
+}
+function drawPair(){
+  stage.innerHTML=`<div class="top2"><span>Còn ${S.left} cặp</span><span>Lượt thử: ${S.moves}</span></div><div class="pairs">`+
+   S.cells.map((c,k)=>`<button class="opt ${c.done?"done":""} ${S.sel===k?"sel":""}" data-c="${k}">${esc(c.t)}</button>`).join("")+`</div><div class="fb" id="fb"></div>`;
+}
+function pickPair(k){
+  const c=S.cells[k];if(c.done||S.sel===k)return;
+  if(c.en)say(c.t);
+  if(S.sel===null){S.sel=k;return drawPair()}
+  const a=S.cells[S.sel];S.moves++;
+  if(a.i===c.i&&!!a.en!==!!c.en){a.done=c.done=true;S.left--;S.sel=null;drawPair();
+    if(!S.left){const s=Math.max(0,100-(S.moves-6)*10),key="pair|"+$("#scope").value;if(best[key]==null||s>best[key]){best[key]=s;save()}
+      stage.innerHTML=`<div class="end"><div class="big">${s}</div><p>Xong sau ${S.moves} lượt thử, mất ${Math.round((Date.now()-S.t0)/1000)} giây.</p><button class="btn" id="again">Chơi lại</button></div>`;
+      $("#again").onclick=()=>start("pair");showBest("pair")}
+    return}
+  S.sel=null;drawPair();$("#fb").className="fb bad";$("#fb").textContent="Chưa khớp, thử lại nhé."
+}
+buildChips();mode(false);
 </script>
 </body>
 </html>
