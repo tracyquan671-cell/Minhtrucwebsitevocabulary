@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Từ vựng tiếng Anh – Minh Trúc tạo</title>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff7ee;--surface:#fff;--ink:#2a1a10;--muted:#7a5a46;--line:#f3d9c0;--or:#f26a1b;--or-d:#c9500d;--or-soft:#ffe3c9;--ok:#1f8a4c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d130c;--surface:#2b1c12;--ink:#fff1e4;--muted:#d1ab90;--line:#4a3120;--or:#ff8440;--or-d:#ffa169;--or-soft:#4a2a15;--ok:#52d28a}}
+:root[data-theme="dark"]{--bg:#1d130c;--surface:#2b1c12;--ink:#fff1e4;--muted:#d1ab90;--line:#4a3120;--or:#ff8440;--or-d:#ffa169;--or-soft:#4a2a15;--ok:#52d28a}
+*{box-sizing:border-box}
+html{scroll-padding-top:150px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:14px;padding:12px 0}
+.brand{font-weight:800;font-size:18px;color:var(--or);white-space:nowrap}
+.brand small{display:block;font-weight:500;font-size:12px;color:var(--muted)}
+.search{flex:1;min-width:0;display:flex;align-items:center;gap:8px;background:var(--surface);border:2px solid var(--line);border-radius:999px;padding:8px 16px}
+.search:focus-within{border-color:var(--or)}
+.search input{flex:1;min-width:0;border:0;background:none;color:var(--ink);font:inherit;outline:none}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:0 0 12px;scrollbar-width:thin}
+.chip{flex:none;border:2px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:500}
+.chip[aria-pressed="true"]{background:var(--or);border-color:var(--or);color:#fff}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center;padding:48px 0 32px}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.08;margin:0 0 14px;font-weight:800;letter-spacing:-.02em}
+.hero h1 span{color:var(--or)}
+.hero p{margin:0 0 22px;color:var(--muted);font-size:18px;max-width:46ch}
+.cta{display:inline-block;background:var(--or);color:#fff;border:0;border-radius:14px;padding:14px 26px;font-weight:700;text-decoration:none}
+.cta:hover{background:var(--or-d)}
+.panel{background:var(--or);color:#fff;border-radius:28px;padding:28px;text-align:center}
+.panel .big{font-size:64px;font-weight:800;line-height:1}
+.panel .bar2{height:12px;border-radius:99px;background:rgba(255,255,255,.3);margin:16px 0 8px;overflow:hidden}
+.panel .bar2 i{display:block;height:100%;width:0;background:#fff;border-radius:99px;transition:width .4s}
+.tools{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:8px 0 4px}
+.tools .seg{display:flex;border:2px solid var(--line);border-radius:12px;overflow:hidden}
+.tools .seg button{border:0;background:var(--surface);color:var(--ink);padding:8px 14px}
+.tools .seg button[aria-pressed="true"]{background:var(--or);color:#fff}
+.tools span.hint{color:var(--muted);font-size:14px}
+section.topic{padding:28px 0 8px}
+section.topic h2{display:flex;align-items:baseline;gap:10px;margin:0 0 14px;font-size:24px;font-weight:800}
+section.topic h2 em{font-style:normal;font-size:14px;font-weight:500;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.card{display:flex;align-items:center;gap:12px;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:12px 12px 12px 14px;transition:border-color .15s}
+.card:hover{border-color:var(--or)}
+.card.known{border-color:var(--ok)}
+.say{flex:none;width:46px;height:46px;border-radius:50%;border:0;background:var(--or-soft);color:var(--or);display:grid;place-items:center}
+.say:hover,.say.on{background:var(--or);color:#fff}
+.say svg{width:22px;height:22px}
+.txt{flex:1;min-width:0}
+.w{font-weight:700;font-size:17px;overflow-wrap:anywhere}
+.t{display:inline-block;font-size:12px;font-weight:700;color:var(--or-d);background:var(--or-soft);border-radius:6px;padding:0 7px;margin-left:6px;vertical-align:2px}
+.m{color:var(--muted);font-size:14px}
+.hide .m{filter:blur(6px);cursor:pointer;user-select:none}
+.hide .m.show{filter:none}
+.ok{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--line);background:none;color:transparent;display:grid;place-items:center;font-weight:800}
+.card.known .ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.empty{padding:48px 0;text-align:center;color:var(--muted)}
+footer{margin-top:48px;background:var(--or);color:#fff;padding:22px 0;text-align:center;font-weight:500}
+footer b{font-weight:800}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:12px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30}
+.toast.on{opacity:1}
+@media (max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px}.bar{flex-wrap:wrap}.search{order:3;flex-basis:100%}html{scroll-padding-top:190px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="bar">
+      <div class="brand">Từ vựng tiếng Anh<small>Minh Trúc tạo</small></div>
+      <label class="search"><span aria-hidden="true">🔍</span><input id="q" type="search" placeholder="Tìm từ tiếng Anh hoặc nghĩa tiếng Việt" aria-label="Tìm từ vựng"></label>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Chủ đề"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <h1>Nghe, nhớ và <span>thuộc từ vựng</span> theo chủ đề</h1>
+      <p>Bấm vào biểu tượng loa để nghe phát âm. Đánh dấu từ đã thuộc để theo dõi tiến độ học mỗi ngày.</p>
+      <a class="cta" href="#list">Bắt đầu học</a>
+    </div>
+    <div class="panel" aria-live="polite">
+      <div class="big" id="pct">0%</div>
+      <div class="bar2"><i id="fill"></i></div>
+      <div id="pcttxt">Đã thuộc 0 / 0 từ</div>
+    </div>
+  </div>
+
+  <div class="tools" id="list">
+    <div class="seg" role="group" aria-label="Tốc độ đọc">
+      <button data-rate="0.9" aria-pressed="true">Tốc độ thường</button>
+      <button data-rate="0.55" aria-pressed="false">Đọc chậm</button>
+    </div>
+    <div class="seg" role="group" aria-label="Chế độ học">
+      <button id="modeAll" aria-pressed="true">Xem nghĩa</button>
+      <button id="modeQuiz" aria-pressed="false">Tự kiểm tra</button>
+    </div>
+    <span class="hint" id="hint">Bấm vào từ để nghe lại</span>
+  </div>
+
+  <div id="out"></div>
+  <div class="empty" id="empty" hidden>Không tìm thấy từ phù hợp. Hãy thử từ khóa khác hoặc chọn chủ đề “Tất cả”.</div>
+</main>
+
+<footer><div class="wrap">Minh Trúc tạo · Vocabulary Collection 2026</div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const T=[
+{n:"Từ học thuật tần suất cao",i:"🎓",w:"abandon|v|từ bỏ;acquire|v|đạt được, thu nhận;adequate|adj|đủ, thỏa đáng;analyze|v|phân tích;beneficial|adj|có lợi, mang lại ích lợi;consequence|n|hậu quả, kết quả;crucial|adj|thiết yếu, hết sức quan trọng;diverse|adj|đa dạng;implement|v|thực hiện, triển khai;perspective|n|góc nhìn, quan điểm;sustainable|adj|bền vững;transparent|adj|minh bạch, rõ ràng"},
+{n:"Học tập và thi cử",i:"📚",w:"assessment|n|đánh giá, kiểm tra;bilingual|adj|song ngữ;compulsory|adj|bắt buộc;critical thinking|n phrase|tư duy phản biện;curriculum|n|chương trình học;fluent|adj|lưu loát, thành thạo;lifelong learning|n phrase|học tập suốt đời;plagiarism|n|đạo văn;scholarship|n|học bổng;semester|n|học kỳ;syllabus|n|đề cương môn học;tuition fee|n phrase|tiền học phí"},
+{n:"Công nghệ và truyền thông",i:"💻",w:"algorithm|n|thuật toán;artificial intelligence|n phrase|trí tuệ nhân tạo;automation|n|tự động hóa;breakthrough|n|bước đột phá;cyber security|n phrase|an ninh mạng;data privacy|n phrase|quyền riêng tư dữ liệu;digital divide|n phrase|khoảng cách số;e-commerce|n|thương mại điện tử;innovation|n|đổi mới, sáng tạo;misinformation|n|thông tin sai lệch;social media|n phrase|mạng xã hội;virtual reality|n phrase|thực tế ảo"},
+{n:"Môi trường và khí hậu",i:"🌿",w:"biodiversity|n|đa dạng sinh học;carbon footprint|n phrase|lượng phát thải carbon;climate change|n phrase|biến đổi khí hậu;deforestation|n|nạn phá rừng;drought|n|hạn hán;ecosystem|n|hệ sinh thái;eco-friendly|adj|thân thiện với môi trường;greenhouse effect|n phrase|hiệu ứng nhà kính;renewable energy|n phrase|năng lượng tái tạo;sea level rise|n phrase|nước biển dâng;recycle|v|tái chế;water scarcity|n phrase|khan hiếm nước sạch"},
+{n:"Sức khỏe và tâm lý",i:"💚",w:"anxiety|n|lo âu, lo lắng;balanced diet|n phrase|chế độ ăn cân bằng;burnout|n|kiệt sức tinh thần;chronic disease|n phrase|bệnh mãn tính;depression|n|trầm cảm; chán nản;immune system|n phrase|hệ miễn dịch;mental health|n phrase|sức khỏe tâm thần;mindfulness|n|sự tỉnh thức, chánh niệm;obesity|n|bệnh béo phì;optimistic|adj|lạc quan;sedentary lifestyle|n phrase|lối sống ít vận động;well-being|n|sức khỏe thể chất và tinh thần"},
+{n:"Nghề nghiệp và kinh tế",i:"💼",w:"applicant|n|người xin việc, ứng viên;business plan|n phrase|kế hoạch kinh doanh;career orientation|n phrase|hướng nghiệp;competitive edge|n phrase|lợi thế cạnh tranh;cover letter|n phrase|thư xin việc;entrepreneur|n|doanh nhân khởi nghiệp;inflation|n|lạm phát;internship|n|kỳ thực tập sinh;job interview|n phrase|buổi phỏng vấn xin việc;revenue|n|doanh thu, tiền thu về;soft skills|n phrase|kỹ năng mềm;startup|n|công ty khởi nghiệp sáng tạo"},
+{n:"Xã hội và quyền công dân",i:"⚖️",w:"awareness|n|nhận thức, ý thức;corruption|n|tham nhũng;democracy|n|dân chủ;discrimination|n|sự phân biệt đối xử;domestic violence|n phrase|bạo lực gia đình;gender equality|n phrase|bình đẳng giới;generation gap|n phrase|khoảng cách thế hệ;human rights|n phrase|nhân quyền;inequality|n|bất bình đẳng;infrastructure|n|cơ sở hạ tầng;refugee|n|người tị nạn;stereotype|n|định kiến, khuôn mẫu cố định"},
+{n:"Văn hóa, du lịch và hội nhập",i:"🌏",w:"backpacker|n|người du lịch bụi;cultural diversity|n phrase|đa dạng văn hóa;cultural heritage|n phrase|di sản văn hóa;culture shock|n phrase|sốc văn hóa;ecotourism|n|du lịch sinh thái;ethnic minority|n phrase|dân tộc thiểu số;hospitality|n|lòng hiếu khách;itinerary|n|lịch trình du lịch;jet lag|n|mệt mỏi do lệch múi giờ;landmark|n|công trình/địa danh nổi tiếng;souvenir|n|quà lưu niệm;visa|n|thị thực"},
+{n:"Khoa học, tự nhiên và lịch sử",i:"🔬",w:"artifact|n|di vật, hiện vật (lịch sử);atmosphere|n|khí quyển; bầu không khí;civilization|n|nền văn minh;dynasty|n|triều đại;evolution|n|tiến hóa;genetics|n|di truyền học;gravity|n|lực hút trái đất, trọng lực;hypothesis|n|giả thuyết;laboratory|n|phòng thí nghiệm;natural selection|n phrase|chọn lọc tự nhiên;photosynthesis|n|quang hợp;species|n|loài (sinh vật)"},
+{n:"Đô thị và giao thông",i:"🏙️",w:"affordable housing|n phrase|nhà ở giá phải chăng;commute|v/n|đi làm hằng ngày;congestion|n|tình trạng tắc đường;flyover|n|cầu vượt;gridlock|n|tắc nghẽn giao thông nghiêm trọng;pedestrian|n/adj|người đi bộ;public transport|n phrase|giao thông công cộng;roundabout|n|bùng binh, vòng xuyến;rush hour|n phrase|giờ cao điểm giao thông;skyscraper|n|tòa nhà chọc trời;smart city|n phrase|thành phố thông minh;urbanization|n|đô thị hóa"},
+{n:"Thể thao và phát triển cá nhân",i:"🏅",w:"accountability|n|tinh thần trách nhiệm;adaptability|n|khả năng thích nghi;ambition|n|tham vọng, hoài bão;athlete|n|vận động viên;confidence|n|tự tin;endurance|n|sức bền, khả năng chịu đựng;gratitude|n|lòng biết ơn;mindset|n|tư duy, quan điểm;perseverance|n|kiên trì, bền chí;procrastinate|v|trì hoãn, để việc đến phút chót;resilience|n|khả năng phục hồi, bền bỉ;time management|n phrase|quản lý thời gian"}
+].map((t,k)=>({...t,id:k,words:t.w.split(";").map(s=>{const[a,b,c]=s.split("|");return{w:a,t:b,m:c,key:a}})}));
+
+const $=s=>document.querySelector(s);
+const out=$("#out"),chips=$("#chips"),toast=$("#toast");
+let known=new Set(),topic=-1,query="",rate=0.9,quiz=false,voice=null,tt;
+try{known=new Set(JSON.parse(localStorage.getItem("mt-known")||"[]"))}catch(e){}
+const save=()=>{try{localStorage.setItem("mt-known",JSON.stringify([...known]))}catch(e){}};
+const total=T.reduce((n,t)=>n+t.words.length,0);
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg>';
+
+function say(text,btn){
+  if(!("speechSynthesis" in window)){note("Trình duyệt này chưa hỗ trợ đọc âm thanh. Hãy thử Chrome, Edge hoặc Safari.");return}
+  const s=speechSynthesis;s.cancel();
+  const u=new SpeechSynthesisUtterance(text);u.lang="en-US";u.rate=rate;
+  if(!voice){const v=s.getVoices();voice=v.find(x=>/en[-_]US/i.test(x.lang))||v.find(x=>/^en/i.test(x.lang))||null}
+  if(voice)u.voice=voice;
+  document.querySelectorAll(".say.on").forEach(b=>b.classList.remove("on"));
+  if(btn){btn.classList.add("on");u.onend=u.onerror=()=>btn.classList.remove("on")}
+  s.speak(u);
+}
+if("speechSynthesis" in window)speechSynthesis.onvoiceschanged=()=>{voice=null};
+function note(m){toast.textContent=m;toast.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>toast.classList.remove("on"),2800)}
+
+function buildChips(){
+  const all=[{id:-1,n:"Tất cả"},...T.map(t=>({id:t.id,n:t.i+" "+t.n}))];
+  chips.innerHTML=all.map(c=>`<button class="chip" data-id="${c.id}" aria-pressed="${c.id===topic}">${esc(c.n)}</button>`).join("");
+}
+function render(){
+  const q=query.trim().toLowerCase();let html="",shown=0;
+  T.forEach(t=>{
+    if(topic!==-1&&t.id!==topic)return;
+    const ws=t.words.filter(x=>!q||x.w.toLowerCase().includes(q)||x.m.toLowerCase().includes(q));
+    if(!ws.length)return;shown+=ws.length;
+    html+=`<section class="topic"><h2>${t.i} ${esc(t.n)} <em>${ws.length} từ</em></h2><div class="grid ${quiz?"hide":""}">`+
+    ws.map(x=>`<div class="card ${known.has(x.key)?"known":""}" data-k="${esc(x.key)}">
+      <button class="say" aria-label="Nghe phát âm từ ${esc(x.w)}">${ICON}</button>
+      <div class="txt"><div class="w">${esc(x.w)}<span class="t">${esc(x.t)}</span></div><div class="m" tabindex="0">${esc(x.m)}</div></div>
+      <button class="ok" aria-label="Đánh dấu đã thuộc" aria-pressed="${known.has(x.key)}">✓</button></div>`).join("")+`</div></section>`;
+  });
+  out.innerHTML=html;$("#empty").hidden=shown>0;progress();
+}
+function progress(){
+  const n=[...known].filter(k=>T.some(t=>t.words.some(w=>w.key===k))).length,p=Math.round(n/total*100);
+  $("#pct").textContent=p+"%";$("#fill").style.width=p+"%";$("#pcttxt").textContent=`Đã thuộc ${n} / ${total} từ`;
+}
+chips.addEventListener("click",e=>{const b=e.target.closest(".chip");if(!b)return;topic=+b.dataset.id;buildChips();render()});
+$("#q").addEventListener("input",e=>{query=e.target.value;render()});
+out.addEventListener("click",e=>{
+  const card=e.target.closest(".card");if(!card)return;const k=card.dataset.k;
+  if(e.target.closest(".ok")){
+    known.has(k)?known.delete(k):known.add(k);save();
+    card.classList.toggle("known",known.has(k));e.target.closest(".ok").setAttribute("aria-pressed",known.has(k));progress();return}
+  if(e.target.closest(".m")&&quiz){e.target.closest(".m").classList.toggle("show");return}
+  say(k,card.querySelector(".say"));
+});
+out.addEventListener("keydown",e=>{if(quiz&&e.key==="Enter"&&e.target.classList.contains("m"))e.target.classList.toggle("show")});
+document.querySelectorAll("[data-rate]").forEach(b=>b.addEventListener("click",()=>{
+  rate=+b.dataset.rate;document.querySelectorAll("[data-rate]").forEach(x=>x.setAttribute("aria-pressed",x===b))}));
+function mode(q){quiz=q;$("#modeAll").setAttribute("aria-pressed",!q);$("#modeQuiz").setAttribute("aria-pressed",q);
+  $("#hint").textContent=q?"Bấm vào phần mờ để xem nghĩa":"Bấm vào từ để nghe lại";render()}
+$("#modeAll").onclick=()=>mode(false);$("#modeQuiz").onclick=()=>mode(true);
+buildChips();render();
+</script>
+</body>
+</html>
